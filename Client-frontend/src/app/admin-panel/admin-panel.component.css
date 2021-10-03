@@ -1,0 +1,218 @@
+.FirstItemBox {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #dce6fc;
+    justify-content: space-around;
+}
+
+.SecondItemBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #dce6fc;
+    box-shadow: 10px 10px 28px -18px rgba(0, 0, 0, 0.75);
+}
+
+.ThirdItemBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #dce6fc;
+}
+
+.FourthItemBox {
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #dce6fc;
+}
+
+.FIB {
+    padding: 20px;
+    width: 48%;
+    border: 1px solid lightgrey;
+    box-shadow: 10px 10px 28px -18px rgba(0, 0, 0, 0.75);
+    height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 15px;
+    background-color: #dce6fc;
+    text-align: left;
+    font-weight: bold;
+    transition-duration: 0.3s;
+    border-radius: 10px;
+}
+
+.FIB:hover {
+    box-shadow: 10px 10px 28px -2px rgb(142, 195, 219);
+    transition-duration: 0.3s;
+}
+
+.SIB {
+    margin-top: 5px;
+    min-width: 300px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    border-left: lightgrey solid 1px;
+    border-right: lightgrey solid 1px;
+    transition-duration: 0.3s;
+}
+
+.SIB:Hover {
+    box-shadow: 10px 10px 28px -14px rgb(89, 135, 188);
+    transition-duration: 0.3s;
+}
+
+.TIB {
+    color: white;
+    border-radius: 4px;
+    box-shadow: 10px 10px 28px -18px rgba(0, 0, 0, 0.75);
+    border: 1px solid lightgrey;
+    margin-top: 5px;
+    min-width: 300px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+
+.TIB:hover {
+    box-shadow: 10px 10px 28px -2px rgb(89, 165, 188);
+    transition-duration: 0.3s;
+}
+
+.Y {
+    background-image: linear-gradient(90deg, #FFC107, #FFC107, #FFC107, rgb(255, 227, 142));
+    color: black;
+}
+
+.G {
+    /* background-color:#28A745; */
+    background-image: linear-gradient(90deg, #28A745, #28A745, #28A745, rgb(87, 212, 116));
+}
+
+.R {
+    /* background-color:#DC3545; */
+    background-image: linear-gradient(90deg, #DC3545, #DC3545, #DC3545, rgb(231, 126, 138));
+}
+
+.B {
+    /* background-color:#17A2B8; */
+    background-image: linear-gradient(90deg, #17A2B8, #17A2B8, #17A2B8, rgb(118, 212, 226));
+}
+
+.graph {
+    height: 200px;
+    width: 600px;
+}
+
+.graphHeading {
+    text-align: center;
+    font-weight: 500;
+}
+
+.SIBtitle {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.green {
+    color: green
+}
+
+.red {
+    color: red
+}
+
+.AdminDashBoardPanel {
+    height: auto;
+    background-color: white;
+    width: 100%;
+    /* overflow: scroll; */
+}
+
+.TIBlogo {
+    font-size: 40px;
+}
+
+#TableDash {
+    width: 90%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px !important;
+    overflow: scroll;
+    /* height: 600px !important; */
+    border-radius: 10px;
+    box-shadow: 10px 10px 28px -18px rgba(0, 0, 0, 0.75);
+    background-color: white;
+}
+
+td {
+    background-color: white;
+    padding: 15px !important;
+    border-bottom: 2px solid #F7F7F7 !important;
+}
+
+th {
+    padding: 20px;
+    background-color: rgb(82, 113, 172);
+    color: white;
+}
+
+.Status {
+    height: auto;
+    width: 70%;
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.Del {
+    background-color: rgb(20, 93, 189);
+}
+
+.Ship {
+    background-color: green;
+}
+
+.Cancel {
+    background-color: rgba(255, 0, 0, 0.849);
+}
+
+.Pending {
+    color: black;
+    background-color: #FFC107;
+}
+
+/* Scroll Bar CSS */
+
+.AdminDashBoardPanel::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+.AdminDashBoardPanel::-webkit-scrollbar-track {
+    background-image: linear-gradient(180deg, purple, #61dafb, purple, #61dafb, purple, #61dafb);
+    /* color of the tracking area */
+}
+
+.AdminDashBoardPanel::-webkit-scrollbar-thumb {
+    background-color: WHITE;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #8A4A93;
+    /* creates padding around scroll thumb */
+}

@@ -1,0 +1,135 @@
+<div class="AdminDashBoardPanel">
+  <div class="ThirdItemBox">
+    <div class="TIB Y">
+      <b>INVENTORY</b>
+      <br />
+      <b class="TIBlogo"><i class="fas fa-briefcase"></i></b>
+      <br />
+      <b class="TIBtitle3">350</b>
+    </div>
+    <div class="TIB G">
+      <b>USERS VISITED</b>
+      <br />
+      <b class="TIBlogo"><i class="fas fa-users"></i></b>
+      <br />
+      <b class="TIBtitle">150K</b>
+    </div>
+    <div class="TIB R">
+      <b>SALES</b>
+      <br />
+      <b class="TIBlogo"><i class="fas fa-shopping-cart"></i></b>
+      <br />
+      <b class="TIBtitle">$3500</b>
+    </div>
+    <div class="TIB B">
+      <b>PAYMENT LEFT</b>
+      <br />
+      <b class="TIBlogo"><i class="fas fa-money-bill-wave"></i></b>
+      <br />
+      <b class="TIBtitle">15</b>
+    </div>
+  </div>
+  <div class="SecondItemBox">
+    <div class="SIB">
+      <b class="green"><i class="fas fa-sort-up"></i>17%</b>
+      <br />
+      <b>Rs {{ totalRevenue }}</b>
+      <br />
+      <b class="SIBtitle">TOTAL REVENUE</b>
+    </div>
+    <div class="SIB">
+      <b class="green"><i class="fas fa-sort-up"></i>0%</b>
+      <br />
+      <b>Rs 0</b>
+      <br />
+      <b class="SIBtitle">TOTAL COST</b>
+    </div>
+    <div class="SIB">
+      <b class="green"><i class="fas fa-sort-up"></i>34%</b>
+      <br />
+      <b>Rs {{ totalProfit }}</b>
+      <br />
+      <b class="SIBtitle">TOTAL PROFIT</b>
+    </div>
+    <div class="SIB">
+      <b class="red"
+        ><i class="fas fa-sort-down">{{ orderData.length }}%</i></b
+      >
+      <br />
+      <b>{{ orderData.length }} Active Orders</b>
+      <br />
+      <b class="SIBtitle">ORDERS TO BE DELIVERED</b>
+    </div>
+  </div>
+  <div class="FirstItemBox">
+    <div class="FIB">
+      <b>ACTIVE ITEMS</b>
+      <br />
+      <br />
+      <table>
+        <tr>
+          <th>ITEMS</th>
+          <th>CALORIE</th>
+          <th>PRICE</th>
+          <th>ACTIVE/REMOVE</th>
+        </tr>
+        <tr *ngFor="let item of productData" style="text-align: center">
+          <td class="dash">{{ item.name }}</td>
+          <td class="dash">{{ item.cal }} Kcal</td>
+          <td class="dash">{{ item.price }}</td>
+          <td class="dash">X</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="FIB">
+      <b>INVENTORY ITEMS</b>
+      <br />
+      <br />
+      <table class="">
+        <tr>
+          <th>ITEMS</th>
+          <th>CALORIE</th>
+          <th>PRICE</th>
+          <th>ACTIVE/REMOVE</th>
+        </tr>
+        <tr *ngFor="let item of productData" style="text-align: center">
+          <td class="dash">{{ item.name }}</td>
+          <td class="dash">{{ item.cal }} Kcal</td>
+          <td class="dash">{{ item.price }}</td>
+          <td class="dash">+</td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <br />
+  </div>
+
+  <div class="FourthItemBox">
+    <br />
+    <br />
+    <h2>LATEST ORDER</h2>
+    <br />
+    <table id="TableDash">
+      <tr>
+        <th>ORDER ID</th>
+        <th>ITEMS</th>
+        <th>QUANTITY</th>
+        <th>AMOUNT</th>
+        <th>STATUS</th>
+      </tr>
+
+      <tr *ngFor="let i of orderData">
+        <td class="dash">{{ i.id }}</td>
+        <td class="dash">{{ i.name }}</td>
+        <td class="dash">{{ i.qty }}</td>
+        <td class="dash">{{ i.price }}</td>
+        <td class="dash">
+          <b class="Status Pending">{{ i.status }}</b>
+        </td>
+      </tr>
+    </table>
+    <br />
+    <br />
+  </div>
+</div>

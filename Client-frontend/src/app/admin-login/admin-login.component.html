@@ -1,0 +1,70 @@
+<div class="background">
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active">ADMIN</h2>
+      <h2 class="inactive underlineHover">ONLY</h2>
+
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <!-- <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" /> -->
+      </div>
+
+      <!-- Login Form -->
+      <form>
+        <input
+          *ngIf="isLogin"
+          type="text"
+          id="login"
+          class="fadeIn second"
+          name="login"
+          placeholder="Admin Email"
+          [(ngModel)]="email"
+        />
+
+        <input
+          *ngIf="isLogin"
+          type="text"
+          id="password"
+          class="fadeIn third"
+          name="login"
+          placeholder="Password"
+          [(ngModel)]="password"
+        />
+        <input
+          *ngIf="isChangePassword"
+          type="text"
+          id="login"
+          class="fadeIn second"
+          name="login"
+          placeholder="Old Password"
+          [(ngModel)]="password"
+        />
+        <input
+          *ngIf="isChangePassword"
+          type="text"
+          id="login"
+          class="fadeIn second"
+          name="login"
+          placeholder="New Password"
+          [(ngModel)]="newPassword"
+        />
+        <button
+          type="submit"
+          class="fadeIn fourth button1"
+          value="Log In"
+          (click)="login()"
+        >
+          SUBMIT
+        </button>
+      </form>
+
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" (click)="activeChangePassword()"
+          >Forgot Password?</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
